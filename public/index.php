@@ -7,9 +7,11 @@
     <title>Bit Bezoeker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
+    
 
 </body>
 
