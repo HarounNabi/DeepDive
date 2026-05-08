@@ -24,4 +24,11 @@ Vanaf de docenten kant zou het leuk zijn als de het gewonnen team, ook nog een l
 
 ## Gebruikte Technieken
 
+1. Javascript
+2. HTML/CSS
+3. Tailwind
+4. PHP
+
 ## Het Eindproduct
+
+---Eindproduct Hier---
