@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bit Academy - Escape The Code</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body {
             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
     </style>
+
 </head>
 
-<body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center p-8">
+<body class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center p-8">
 
-    <div class="w-full mb-12">
+    <div class="w-full mb--10">
         <div class="flex flex-col">
             <span class="text-3xl font-bold text-black">Noorderp<span class="text-[#EAC700]">oo</span>rt</span>
-            <span class="text-xl font-medium text-black -mt-1">bit academy</span>
+            <span class="text-xl font-medium text-black -mt-1.1">bit academy</span>
         </div>
     </div>
 
