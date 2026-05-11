@@ -17,10 +17,10 @@
 
 <body class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center p-8">
 
-    <div class="w-full mb--10">
+    <div class="w-full mb-0">
         <div class="flex flex-col">
             <span class="text-3xl font-bold text-black">Noorderp<span class="text-[#EAC700]">oo</span>rt</span>
-            <span class="text-xl font-medium text-black -mt-1.1">bit academy</span>
+            <span class="text-xl font-medium text-black mt-1.1 mb-0.2">bit academy</span>
         </div>
     </div>
 
