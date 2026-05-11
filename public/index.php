@@ -1,3 +1,11 @@
+<?php
+
+include_once "views/navbar.php";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,20 +16,13 @@
     <title>Bit Academy - Escape The Code</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center p-8">
+<body
 
-    <div class="w-full mb-0">
-        <div class="flex flex-col">
-            <span class="text-3xl font-bold text-black">Noorderp<span class="text-[#EAC700]">oo</span>rt</span>
-            <span class="text-xl font-medium text-black mt-1.1 mb-0.2">bit academy</span>
-        </div>
-    </div>
-
+    class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center">
     <div class="flex flex-col items-center text-center max-w-2xl">
-        <p class="text-[#EAC700] text-sm font-bold uppercase tracking-wide">Bit Academy • Noorderpoort</p>
+        <p class="text-[#EAC700] mt-2 text-sm font-bold uppercase tracking-wide">Bit Academy • Noorderpoort</p>
 
         <h1 class="text-[#868686] text-6xl font-extrabold tracking-tight mt-2 leading-none">ESCAPE</h1>
         <h1 class="text-[#EAC700] text-6xl font-extrabold tracking-tight leading-none">THE CODE</h1>
@@ -30,7 +31,7 @@
             Ontdek wat de opleiding Software Developer inhoudt. Los 4 puzzels op, verzamel de eindcode en registreer jouw tijd op de highscore lijst.
         </p>
 
-        <div class="bg-white rounded-3xl shadow-xl p-10 mt-10 w-full max-w-md text-left">
+        <div class="bg-white rounded-3xl shadow-xl p-10 mt-8 w-full max-w-md text-left">
             <h2 class="text-[#868686] text-3xl font-semibold mb-8">Registratie</h2>
 
             <form action="info.php" method="POST" class="space-y-6">
