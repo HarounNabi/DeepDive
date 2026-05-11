@@ -7,12 +7,7 @@
     <title>Bit Academy - Escape The Code</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        body {
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center p-8">
@@ -37,16 +32,16 @@
         <div class="bg-white rounded-3xl shadow-xl p-10 mt-10 w-full max-w-md text-left">
             <h2 class="text-[#868686] text-3xl font-semibold mb-8">Registratie</h2>
 
-            <form class="space-y-6">
+            <form action="info.php" method="POST" class="space-y-6">
                 <div>
                     <label class="block text-gray-500 text-lg mb-2">Voornaam</label>
-                    <input type="text" placeholder="Bijv. Dylan."
+                    <input name="voornaam" type="text" placeholder="Bijv. Dylan."
                         class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#EAC700] placeholder-gray-300">
                 </div>
 
                 <div>
                     <label class="block text-gray-500 text-lg mb-2">Teamnaam</label>
-                    <input type="text" placeholder="Bijv. Team A"
+                    <input name="teamnaam" type="text" placeholder="Bijv. Team A"
                         class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#EAC700] placeholder-gray-300">
                 </div>
 

@@ -1,5 +1,12 @@
 body {
-    overflow: hidden;
-    height: 100%;
-    overscroll-behavior: none;
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
 }
