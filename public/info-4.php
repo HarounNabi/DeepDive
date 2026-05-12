@@ -17,23 +17,26 @@ include_once "views/navbar.php";
 </head>
 
 <body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center">
-    <div class="bg-white mt-25 rounded-[40px] shadow-2xl p-12 w-full max-w-2xl text-center">
+    <div class="bg-white mt-18 rounded-[40px] shadow-2xl p-12 w-full max-w-2xl text-center">
 
-        <h1 class="text-black text-4xl font-bold mb-8">Quiz Beschrijving</h1>
+        <h1 class="text-black text-4xl font-bold mb-8">Talen</h1>
 
         <div class="space-y-6 text-gray-800 text-lg leading-relaxed">
             <p class="font-medium">
-                Informatie: Wat leuk dat je interesse hebt in de opleiding Software Developer bij de Bit Academy!
+                Tijdens de opleiding leer je alles over het bouwen van software en apps (applicaties met een doel voor elk apparaat). Je maakt kennis met verschillende rollen:
             </p>
-
             <p>
-                Je leert vooral door te doen: projecten bouwen, samenwerken en werken met programmeertalen zoals JavaScript.
-                Je hebt geen ervaring nodig, wel motivatie en een goede laptop. De opleiding duurt gemiddeld 3 jaar (MBO niveau 4) en bevat ook stage.
+                Frontend Developer: Bouwt de voorkant van een website (wat de gebruiker ziet). Dit is het design en de interface.
+            </p>
+            <p>
+                Backend Developer: Bouwt de achterkant van de website (wat je niet ziet). Hier zit de logica en de database-koppeling.
+
+                Je gaat aan de slag met de meest gebruikte talen onder developers, zoals JavaScript, en leert grappen maken over talen waar je "scherp" mee ziet, zoals C# (C-Sharp).
             </p>
         </div>
 
-        <div class="mt-10">
-            <a href="info-5.php"
+        <div class="mt-5">
+            <a href="quiz.php"
                 class="animate-gradient-4 inline-flex items-center justify-center h-14 text-white font-bold px-16 rounded-2xl 
               bg-gradient-to-r from-[#e51477] via-[#e51477] via-[#89CFF0] to-[#EAC700] 
               transition-transform hover:scale-105 shadow-lg">

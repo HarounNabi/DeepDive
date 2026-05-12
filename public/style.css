@@ -1,4 +1,6 @@
 body {
+    animation: fadeInPage 0.8s ease-in-out;
+
     font-family:
         ui-sans-serif,
         system-ui,
@@ -93,7 +95,7 @@ body {
     border: none;
     border-radius: 16px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -103,4 +105,13 @@ body {
 
     background-size: 300% 100%;
     animation: gradient-flow 3s linear infinite;
+}
+
+@keyframes fadeInPage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

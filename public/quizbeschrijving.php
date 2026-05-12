@@ -33,8 +33,8 @@ include_once "views/navbar.php";
         </div>
 
         <div class="mt-10">
-            <a
-                class="animate-gradient-5 inline-flex items-center justify-center h-14 text-white font-bold px-16 rounded-2xl 
+            <a href="info-1.php"
+                class="animate-gradient-1 inline-flex items-center justify-center h-14 text-white font-bold px-16 rounded-2xl 
               bg-gradient-to-r from-[#e51477] via-[#e51477] via-[#89CFF0] to-[#EAC700] 
               transition-transform hover:scale-105 shadow-lg">
                 Ga verder

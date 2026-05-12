@@ -19,16 +19,11 @@ include_once "views/navbar.php";
 <body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center">
     <div class="bg-white mt-25 rounded-[40px] shadow-2xl p-12 w-full max-w-2xl text-center">
 
-        <h1 class="text-black text-4xl font-bold mb-8">Quiz Beschrijving</h1>
+        <h1 class="text-black text-4xl font-bold mb-8">Flexibiliteit</h1>
 
         <div class="space-y-6 text-gray-800 text-lg leading-relaxed">
             <p class="font-medium">
-                Informatie: Wat leuk dat je interesse hebt in de opleiding Software Developer bij de Bit Academy!
-            </p>
-
-            <p>
-                Je leert vooral door te doen: projecten bouwen, samenwerken en werken met programmeertalen zoals JavaScript.
-                Je hebt geen ervaring nodig, wel motivatie en een goede laptop. De opleiding duurt gemiddeld 3 jaar (MBO niveau 4) en bevat ook stage.
+                In tegenstelling tot traditionele scholen, waar je de hele dag naar een docent luistert, bepaal je bij ons samen met je coach je eigen koers. Je kiest dagelijks je eigen starttijd en werkt via het platform Nexed. Centraal in onze visie staat P2P (Peer-to-Peer) learning, wat betekent dat je intensief samenwerkt met medestudenten om van en met elkaar te leren.
             </p>
         </div>
 

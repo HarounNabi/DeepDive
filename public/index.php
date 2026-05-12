@@ -35,7 +35,7 @@ include_once "db/db.php";
         <div class="bg-white rounded-3xl shadow-xl p-10 mt-8 w-full max-w-md text-left">
             <h2 class="text-[#868686] text-3xl font-semibold mb-8">Registratie</h2>
 
-            <form action="info-1.php" method="POST" class="space-y-6">
+            <form action="quizbeschrijving.php" method="POST" class="space-y-6">
                 <div>
                     <label class="block text-gray-500 text-lg mb-2">Voornaam</label>
                     <input name="voornaam" type="text" placeholder="Bijv. Dylan."
