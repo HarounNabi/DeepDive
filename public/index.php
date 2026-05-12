@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include_once "views/navbar.php";
 include_once "db/db.php";
 
@@ -16,12 +18,11 @@ include_once "db/db.php";
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body
 
-    class="bg-[#F8F8F8] h-screen overflow-hidden flex flex-col items-center">
+    class="bg-[#F8F8F8] min-h-screen overflow-y-auto flex flex-col items-center p-32">
     <div class="flex flex-col items-center text-center max-w-2xl">
         <p class="text-[#EAC700] mt-5 text-sm font-bold uppercase tracking-wide">Bit Academy • Noorderpoort</p>
 
