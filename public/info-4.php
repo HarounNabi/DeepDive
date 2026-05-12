@@ -19,19 +19,19 @@ include_once "views/navbar.php";
 <body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center">
     <div class="bg-white mt-18 rounded-[40px] shadow-2xl p-12 w-full max-w-2xl text-center">
 
-        <h1 class="text-black text-4xl font-bold mb-8">Talen</h1>
+        <h1 class="text-black text-4xl font-bold mb-8">Rollen</h1>
 
         <div class="space-y-6 text-gray-800 text-lg leading-relaxed">
             <p class="font-medium">
                 Tijdens de opleiding leer je alles over het bouwen van software en apps (applicaties met een doel voor elk apparaat). Je maakt kennis met verschillende rollen:
             </p>
             <p>
-                Frontend Developer: Bouwt de voorkant van een website (wat de gebruiker ziet). Dit is het design en de interface.
+                Frontend Developer: Bouwt de voorkant van een website (wat de gebruiker ziet). Dit is het design en de interface. JavaScript. (FIX DIT)
             </p>
             <p>
                 Backend Developer: Bouwt de achterkant van de website (wat je niet ziet). Hier zit de logica en de database-koppeling.
 
-                Je gaat aan de slag met de meest gebruikte talen onder developers, zoals JavaScript, en leert grappen maken over talen waar je "scherp" mee ziet, zoals C# (C-Sharp).
+                Je gaat aan de slag met de meest gebruikte talen onder developers zoals PHP, en leert grappen maken over talen waar je "scherp" mee ziet, zoals C# (C-Sharp).
             </p>
         </div>
 
