@@ -1,6 +1,7 @@
 <?php
 
 include_once "views/navbar.php";
+include_once "db/db.php";
 
 ?>
 
@@ -20,4 +21,4 @@ include_once "views/navbar.php";
 
 </body>
 
-</html>
+</html>x
