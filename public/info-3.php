@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $_SESSION['voornaam'] = $_POST['voornaam'];
+    $_SESSION['teamnaam'] = $_POST['teamnaam'];
+}
+
+include_once "db/db.php";
 include_once "views/navbar.php";
 
 ?>
@@ -16,7 +24,7 @@ include_once "views/navbar.php";
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center">
+<body class="bg-[#F8F8F8] min-h-screen flex flex-col items-center p-32">
     <div class="bg-white mt-25 rounded-[40px] shadow-2xl p-12 w-full max-w-2xl text-center">
 
         <h1 class="text-black text-4xl font-bold mb-8">Quiz Beschrijving</h1>
