@@ -11,7 +11,7 @@ include_once "views/navbar.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bit Bezoeker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -31,31 +31,11 @@ include_once "views/navbar.php";
                 Je hebt geen ervaring nodig, wel motivatie en een goede laptop. De opleiding duurt gemiddeld 3 jaar (MBO niveau 4) en bevat ook stage.
             </p>
         </div>
-        <style>
-            @keyframes fluid-gradient {
-                0% {
-                    background-position: 0% 50%;
-                }
-
-                50% {
-                    background-position: 100% 50%;
-                }
-
-                100% {
-                    background-position: 0% 50%;
-                }
-            }
-
-            .animate-gradient {
-                background-size: 300% 300%;
-                animation: fluid-gradient 4s ease infinite;
-            }
-        </style>
 
         <div class="mt-10">
             <a href="info-5.php"
-                class="animate-gradient inline-flex items-center justify-center h-14 text-white font-bold px-16 rounded-2xl 
-              bg-gradient-to-r from-[#89CFF0] via-[#e51477] via-[#89CFF0] to-[#EAC700] 
+                class="animate-gradient-4 inline-flex items-center justify-center h-14 text-white font-bold px-16 rounded-2xl 
+              bg-gradient-to-r from-[#e51477] via-[#e51477] via-[#89CFF0] to-[#EAC700] 
               transition-transform hover:scale-105 shadow-lg">
                 Ga verder
             </a>

@@ -10,3 +10,97 @@ body {
         Arial,
         sans-serif;
 }
+
+.animate-gradient-1 {
+    padding: 12px 65px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #e51477 0%, #b900ca 33.33%, #ffd900 66.66%, #e51477 100%);
+
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 150% center;
+    }
+}
+
+.animate-gradient-2 {
+    padding: 12px 65px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #ffd900 0%, #e51477 33.33%, #b900ca 66.66%, #ffd900 100%);
+
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
+}
+
+.animate-gradient-3 {
+    padding: 12px 65px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #b900ca 0%, #e51477 33.33%, #ffd900 66.66%, #b900ca 100%);
+
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
+}
+
+.animate-gradient-4 {
+    padding: 12px 65px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #e51477 0%, #ffd900 33.33%, #b900ca 66.66%, #e51477 100%);
+
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
+}
+
+.animate-gradient-5 {
+    padding: 12px 65px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #ffd900 0%, #e51477 33.33%, #b900ca 66.66%, #ffd900 100%);
+
+    background-size: 300% 100%;
+    animation: gradient-flow 3s linear infinite;
+}
