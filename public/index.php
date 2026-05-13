@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once "views/navbar.php";
+// include_once "views/navbar.php";
 include_once "db/db.php";
 
 ?>
@@ -39,14 +39,14 @@ include_once "db/db.php";
             <form action="quizbeschrijving.php" method="POST" class="space-y-6">
                 <div>
                     <label class="block text-gray-500 text-lg mb-2">Voornaam</label>
-                    <input name="voornaam" type="text" placeholder="Bijv. Dylan."
+                    <input name="voornaam" type="text" placeholder="Bijv. Dylan." required="true"
                         class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#EAC700] placeholder-gray-300">
                 </div>
 
                 <div>
                     <label class="block text-gray-500 text-lg mb-2">Teamnaam</label>
-                    <input name="teamnaam" type="text" placeholder="Bijv. Team A"
-                        class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#EAC700] placeholder-gray-300">
+                    <input name="teamnaam" type="text" placeholder="Bijv. Team A" required="true"
+                        class=" w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#EAC700] placeholder-gray-300">
                 </div>
 
                 <button type="submit"
