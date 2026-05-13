@@ -5,6 +5,7 @@ session_start();
 include_once "db/db.php";
 include_once "views/navbar.php";
 
+
 ?>
 
 <!DOCTYPE html>

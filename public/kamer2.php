@@ -1,11 +1,30 @@
 <?php
 session_start();
-include_once "views/navbar.php";
 include_once "db/db.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['current_table'])) {
+    $vorige_tabel = $_POST['current_table'];
+    $kamer_nr = $_POST['kamer_nummer'];
+
+    $stmt = $database->prepare("SELECT id, juist FROM $vorige_tabel");
+    $stmt->execute();
+    $correcte_antwoorden = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+
+    $score = 0;
+    foreach ($correcte_antwoorden as $id => $juiste_waarde) {
+        $input_naam = "vraag_" . $id;
+        if (isset($_POST[$input_naam]) && $_POST[$input_naam] === $juiste_waarde) {
+            $score++;
+        }
+    }
+
+    $_SESSION["score_$kamer_nr"] = $score;
+}
 
 $query = $database->query("SELECT * FROM KAMER_TWEE");
 $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
 
+include_once "views/navbar.php";
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +33,17 @@ $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibiliteit</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto">
         <form action="kamer3.php" method="POST">
+
+            <input type="hidden" name="current_table" value="KAMER_TWEE">
+            <input type="hidden" name="kamer_nummer" value="2">
 
             <?php foreach ($vragen as $vraag): ?>
                 <div class="bg-white rounded-3xl shadow-xl p-8 mb-6 text-left">
@@ -36,13 +60,14 @@ $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
                             'vier' => $vraag['antwoord_vier']
                         ];
 
-                        foreach ($opties as $key => $optie):
+                        foreach ($opties as $optie):
                             if (!empty($optie)):
                         ?>
                                 <label class="flex items-center p-4 border border-gray-100 rounded-xl cursor-pointer hover:bg-gray-50 transition">
                                     <input type="radio"
                                         name="vraag_<?= $vraag['id'] ?>"
                                         value="<?= htmlspecialchars($optie) ?>"
+                                        required
                                         class="w-4 h-4 text-[#EAC700] focus:ring-[#EAC700]">
                                     <span class="ml-3 text-gray-700"><?= htmlspecialchars($optie) ?></span>
                                 </label>

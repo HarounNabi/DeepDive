@@ -1,11 +1,10 @@
 <?php
 session_start();
-include_once "views/navbar.php";
 include_once "db/db.php";
+include_once "views/navbar.php";
 
 $query = $database->query("SELECT * FROM KAMER_EEN");
 $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +13,17 @@ $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Expert</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto">
         <form action="kamer2.php" method="POST">
+
+            <input type="hidden" name="current_table" value="KAMER_EEN">
+            <input type="hidden" name="kamer_nummer" value="1">
 
             <?php foreach ($vragen as $vraag): ?>
                 <div class="bg-white rounded-3xl shadow-xl p-8 mb-6 text-left">
@@ -36,13 +40,14 @@ $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
                             'vier' => $vraag['antwoord_vier']
                         ];
 
-                        foreach ($opties as $key => $optie):
+                        foreach ($opties as $optie):
                             if (!empty($optie)):
                         ?>
                                 <label class="flex items-center p-4 border border-gray-100 rounded-xl cursor-pointer hover:bg-gray-50 transition">
                                     <input type="radio"
                                         name="vraag_<?= $vraag['id'] ?>"
                                         value="<?= htmlspecialchars($optie) ?>"
+                                        required
                                         class="w-4 h-4 text-[#EAC700] focus:ring-[#EAC700]">
                                     <span class="ml-3 text-gray-700"><?= htmlspecialchars($optie) ?></span>
                                 </label>
