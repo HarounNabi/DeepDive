@@ -39,7 +39,6 @@ Verder hebben we onze doelen behaald en zijn we heel trots op het resultaat.
 
 Om het product te runnen kun je de volgende stappen volgen:
 
-
 1. Clone de repo: (git clone https://github.com/NP-BIT-Dev/deep-dive-2526-p4-team-1-1.git)
 
 2. Open XAMPP en start Apache en MySQL op.
@@ -56,3 +55,19 @@ Om het product te runnen kun je de volgende stappen volgen:
 - Nathaniel: Verantwoordelijk voor het design, front-end en geholpen met Back-end.
 - Haroun: Front-End, design en alle mooie animaties.
 - David: Heeft ons halverwege de deepdive verlaten, waardoor we een teamlid minder hadden!
+
+## Groep Reflectie
+
+Als team hebben we hieronder opgeschreven wat wij vonden dat volgende keer beter kon gaan.
+
+1. Sneller designen
+2. Makkelijkste dingen als laatst
+3. Betere team indeling (Gebalanceerd, Back-End, Back-End, Front-End en Front-End)
+
+Dit leek ons het meest logisch om op te schrijven, aangezien we bij het einde tijd nood hadden omdat we de moeilijkste dingen zoals de eindcode nog moesten implementeren.
+
+Voor de rest vonden wij het allemaal wel goed gaan, zoals:
+
+1. Goede communicatie in het team
+2. Werken met github
+3. Het verloop van de Deepdive
