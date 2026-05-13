@@ -46,8 +46,8 @@ include_once "views/navbar.php";
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto text-center">
         <div class="bg-white rounded-3xl shadow-xl p-12">
-            <h1 class="text-4xl font-black text-gray-800 mb-4">Gefeliciteerd Speler! 🏆</h1>
-            <p class="text-gray-600 mb-8 text-lg">Jij en jouw team hebben alle kamers doorlopen. Hier zijn jullie resultaten:</p>
+            <h1 class="text-4xl font-black text-gray-800 mb-4">Gefeliciteerd Wander! 🏆</h1>
+            <p class="text-gray-600 mb-8 text-lg">Jij en Team B hebben alle kamers doorlopen. Hier zijn jullie resultaten:</p>
 
             <div class="grid grid-cols-2 gap-4 mb-8">
                 <div class="p-4 bg-gray-50 rounded-2xl">
