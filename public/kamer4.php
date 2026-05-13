@@ -19,7 +19,7 @@ $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto">
-        <form action="succes.php" method="POST">
+        <form action="eindcode.php" method="POST">
 
             <?php foreach ($vragen as $vraag): ?>
                 <div class="bg-white rounded-3xl shadow-xl p-8 mb-6 text-left">
