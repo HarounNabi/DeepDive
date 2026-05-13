@@ -38,9 +38,7 @@ include_once "views/navbar.php";
 
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto">
-        <form action="succes.php" method="POST">
-            <input type="hidden" name="current_table" value="KAMER_VIER">
-            <input type="hidden" name="kamer_nummer" value="4">
+        <form action="eindcode.php" method="POST">
 
             <?php foreach ($vragen as $vraag): ?>
                 <div class="bg-white rounded-3xl shadow-xl p-8 mb-6">

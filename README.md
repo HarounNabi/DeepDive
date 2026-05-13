@@ -8,9 +8,7 @@ In deze quiz leren hun wat ze allemaal kunnen verwachten van de opleiding, hoe w
 
 ## Ons Idee
 
-Wij maken zoals vermeld in de opdrachtkenismaking een website met daarop een Quiz erop, bij de quiz zit: Een timer, een scoreboard en 4 kamers met verschillende puzzels. Zodra de laatste kamer is opgelost zal de timer op stop gezet worden en dit zal dan de tijd zijn waarin het team de opdracht heeft voltooid!
-
-Het team zal ook aan het eind van elke kamer een stuk codewoord krijgen, waarmee je aan het einde nadat je je tijd hebt vastgelegd een compleet codewoord zou kunnen maken!
+Wij maken zoals vermeld in de opdrachtkenismaking een website met daarop een Quiz erop, bij de quiz zit: Een scoreboard en 4 kamers met verschillende puzzels. Zodra de laatste kamer is opgelost zal de eindscore te zien zijn, samen met hoeveel vragen je per kamer juist hebt beantwoord!
 
 Vanaf de docenten kant zou het leuk zijn als de het gewonnen team, ook nog een leuke prijs na keuze krijgt van de Bit Academy!
 
@@ -31,4 +29,3 @@ Vanaf de docenten kant zou het leuk zijn als de het gewonnen team, ook nog een l
 
 ## Het Eindproduct
 
----Eindproduct Hier---
