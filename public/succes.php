@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-include_once "views/navbar.php";
 include_once "db/db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['current_table'])) {
@@ -79,9 +77,7 @@ include_once "views/navbar.php";
                 Terug naar Registratie
             </a>
 
-            <?php
-            session_destroy();
-            ?>
+            <?php session_destroy(); ?>
         </div>
     </div>
 </body>

@@ -2,23 +2,6 @@
 session_start();
 include_once "db/db.php";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['current_table'])) {
-    $vorige_tabel = $_POST['current_table'];
-    $kamer_nr = $_POST['kamer_nummer'];
-
-    $stmt = $database->prepare("SELECT id, juist FROM $vorige_tabel");
-    $stmt->execute();
-    $correcte_antwoorden = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
-
-    $score = 0;
-    foreach ($correcte_antwoorden as $id => $juiste_waarde) {
-        if (isset($_POST["vraag_$id"]) && $_POST["vraag_$id"] === $juiste_waarde) {
-            $score++;
-        }
-    }
-    $_SESSION["score_$kamer_nr"] = $score;
-}
-
 $query = $database->query("SELECT * FROM KAMER_VIER");
 $vragen = $query->fetchAll(PDO::FETCH_ASSOC);
 
@@ -39,6 +22,8 @@ include_once "views/navbar.php";
 <body class="bg-[#F8F8F8] min-h-screen p-8 pt-32">
     <div class="max-w-2xl mx-auto">
         <form action="eindcode.php" method="POST">
+            <input type="hidden" name="current_table" value="KAMER_VIER">
+            <input type="hidden" name="kamer_nummer" value="4">
 
             <?php foreach ($vragen as $vraag): ?>
                 <div class="bg-white rounded-3xl shadow-xl p-8 mb-6">
